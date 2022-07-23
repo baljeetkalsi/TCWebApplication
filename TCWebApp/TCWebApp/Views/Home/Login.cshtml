@@ -28,16 +28,11 @@
                 @using (Html.BeginForm("Login", "Home", FormMethod.Post))
                 {
                     <br />
-                    //Html.TextBoxFor(a => a.UserName, new { @class = "Temp", style = "width: 200px;", ng_model = "NumberMOdel", @pmlrefautocomplete = "" })
-
-                    <label for="inputEmail" class="sr-only">User Name</label>
+                    <label">User Name</label>
                     @Html.TextBoxFor(a => a.UserName, new { @class = "form-control", @required = "", placeholder = "UserName" })
-                    @*<input type="text" id="UserName" class="form-control" placeholder="User Name" required autofocus>*@
-
                     <br />
                     <label>Password</label>
                     @Html.PasswordFor(a => a.Password, new { @class = "form-control", @required = "", placeholder = "Password" })
-                    @*<input type="password" id="Password" class="form-control" placeholder="Password" required>*@
                     <br />
                     <button class="btn btn-primary " type="submit">Sign in</button>
                 }
